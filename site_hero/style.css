@@ -1,0 +1,73 @@
+body {background-image: url(images/bg_zelda.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	margin: 0px;
+	padding: 0px;
+}
+
+@font-face{
+	font-family: "stone";
+	src: url('fonts/stone.ttf');
+}
+
+p{
+	margin: 2px;
+	padding: 2px;
+}
+
+.Block {
+	font-family: "stone";
+	position: relative;
+	display: block;
+	width: 40%;
+	height: 40%;
+
+	background-color: rgba(255,255,255,0.4);
+	border: solid 1px black;
+
+	margin: 10px auto;
+	padding: 10px;
+
+}
+
+.titre{
+	font-size: 34px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.soustitre{
+	font-size: 24px;
+}
+.histoire{
+	font-size: 24px;
+}
+
+.RESET{
+	font-family: "stone";
+	width: 10%;
+	height: 10%;
+	position: absolute;
+	bottom: 10px;
+	right: 200px;
+}
+
+.retry{
+	color: blue;
+	position: bottom;
+	font-size: 50px;
+}
+
+.black:visited, .black:link{
+	color: black;
+}
+
+.vert:visited, .vert:link{
+	color: green;
+}
+
+.vert:hover{
+	color: black;
+}
+
+
