@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>CV Enzo Compérat</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  </head>
+  <body>
+    <div class="w3-container w3-margin w3-text-white w3-blue w3-round w3-center">
+      <p>Enzo Compérat</p>
+    </div>
+    <div class="presentation">
+      <div>
+        <img src="enzo.png" class="w3-round w3-margin" alt="Photo">
+      </div>
+      <div class="w3-margin w3-card-4 w3-panel w3-padding-16 w3-blue w3-text-white w3-round w3-teal" >
+        18 ans et actuellement en première année
+        de Bachelor Informatique à l'EPSI de
+        Brest, j'apprend le developpement
+        informatique sous tous ses angles.
+      </div>
+      <div class="w3-margin w3-card-4 w3-panel w3-padding-16 w3-blue w3-text-white w3-round w3-teal" >
+      <h2 class="w3-margin w3-left">Coordonnées</h2>
+        <ul class="w3-ul w3-container w3-blue w3-round w3-card-4">
+          <li>+33 6 28 55 48 22</li>
+          <li>enzo.comperat@gmail.com</li>
+          <li>Brest 29200</li>
+        </ul>
+      </div>
+      
+    </div>
+    <div class="competence">
+      <div class="w3-container w3-round w3-margin w3-blue">
+        <button class="w3-bar-item w3-button" onclick="openCity('comp')">Compétences</button>
+        <button class="w3-bar-item w3-button" onclick="openCity('form')">Formations</button>
+        <button class="w3-bar-item w3-button" onclick="openCity('exp')">Exériences</button>
+        <button class="w3-bar-item w3-button" onclick="openCity('ci')">Centres d'intérêt</button>
+      </div>
+
+      <div id="comp" class="w3-container city w3-teal w3-round w3-margin w3-card-4">
+        <h2>Mes compétences</h2>
+        <ul class="w3-ul w3-margin w3-card-4 w3-round w3-white" style="width:50%">
+        <li>HTML/CSS</li>
+          <div class="w3-border ">
+            <div class="w3-green w3-round w3-center" style="height:24px;width:40%">Avancé</div>
+          </div>
+        <li>Linux/Debian</li>
+          <div class="w3-border">
+            <div class="w3-green w3-round w3-center" style="height:24px;width:40%">Avancé</div>
+          </div>
+        <li>Gestion d'équipe</li>
+          <div class="w3-border">
+            <div class="w3-green w3-round w3-center" style="height:24px;width:50%">Compétent</div>
+          </div>
+        <li>SQL</li>
+          <div class="w3-border w3-round">
+            <div class="w3-green w3-round w3-center" style="height:24px;width:20%">Novice</div>
+          </div>
+        </ul>
+      </div>
+
+      <div id="form" class="w3-container city w3-teal w3-round w3-margin w3-card-4" style="display:none">
+        <h2>Mes Formations</h2>
+        <ul class="w3-ul w3-margin w3-card-4 w3-round w3-white" style="width:50%">
+          <li>Bachelor Informatique EPSI (En cours)</li>
+          <li>Baccalauréat STI2D (Opt. SIN) (Assez bien)</li>
+          <li>Brevet des collèges (Assez bien)</li>
+        </ul>
+      </div>
+
+      <div id="exp" class="w3-container city w3-teal w3-round w3-margin w3-card-4" style="display:none">
+        <h2>Mes éxperiences</h2>
+        <ul class="w3-ul w3-margin w3-card-4 w3-round w3-white" style="width:50%">
+        <li>Animateur pour l'association LA CLAIRIERE MILIZAC</li>
+        </ul>
+      </div>
+      
+      <div id="ci" class="w3-container city w3-teal w3-round w3-margin w3-card-4" style="display:none">
+        <h2>Pilotage Automobile</h2>
+        <p>Depuis plusieurs années je suis passionné de pilotage automobile, n'ayant pas encore les moyens d'éxprimer cette passion dans la vraie vie je m'entraine sur mon simulateur que j'ai pu perfectionner via l'impression 3D.</p>
+        <img src="image0.jpg" class="w3-round w3-margin setup" alt="Photo">
+      </div>
+    </div>
+  </body>
+  <style>
+    
+    .presentation{
+      display: flex;
+      flex-wrap:row;
+      width: 75%;
+    }
+    
+    img{
+      width: 75%;
+    }
+    
+    .competences{
+      display: flex;
+      flex-wrap:row;
+      width: 75%;
+    }
+    .setup{
+      width: 300px
+    }
+    
+  </style>
+  <script>
+    function openCity(cityName) {
+      var i;
+      var x = document.getElementsByClassName("city");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      document.getElementById(cityName).style.display = "block";  
+    }
+  </script>
+
+</html>
